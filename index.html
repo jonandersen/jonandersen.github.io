@@ -98,7 +98,7 @@
     <div id="home">
         <section class="video-banner full-height">
             
-            <video id="my-video" class="video-wrap" muted loop>
+            <video id="my-video" class="video-wrap" muted loop autoplay>
                 <source src="assets/img/media/video.mp4" type="video/mp4">
                 <source src="assets/img/media/demo.ogv" type="video/ogg">
                 <source src="assets/img/media/demo.webm" type="video/webm">
@@ -354,21 +354,6 @@
     <!--init scripts-->
     <script src="assets/js/scripts.min.js"></script>
 
-    <script>
-        /* ---------------------------------------------
-         video banner
-         --------------------------------------------- */
-
-        var video = document.getElementById("my-video");
-
-        /**
-         * Check if video can play, and play it
-         */
-        video.addEventListener( "canplay", function() {
-            video.play();
-        });
-    </script>
-	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
