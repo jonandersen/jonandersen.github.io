@@ -1,23 +1,385 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Responsive Bootstrap One Page Template">
+    <meta name="keywords" content="onepage, Bootstrap, one page, Template, App, Mobile">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="MHS">
 
-<div class="home">
+    <!--favicon and touch icon-->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon-114x114.png">
 
-  <h1 class="page-heading">Posts</h1>
+    <!--site title-->
+    <title>Leap Second</title>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <!--web font-->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- ====================
+    stylesheet
+    ======================-->
+    <!--bootstrap-->
+    <link href="assets/vendor/bs/css/bootstrap.min.css" rel="stylesheet">
 
-</div>
+    <!--icon font-->
+    <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/vendor/et-line-font/style.css" rel="stylesheet">
+
+    <!--owl carousel-->
+    <link rel="stylesheet" href="assets/vendor/owl/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendor/owl/assets/owl.theme.default.min.css">
+
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css">
+
+    <!--animate css-->
+    <link rel="stylesheet" href="assets/vendor/animate.css">
+
+    <!--custom css-->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/vendor/html5shiv.js"></script>
+    <script src="assets/vendor/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <!--preloader start-->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+    <!--preloader end-->
+
+    <!--header start-->
+    <header class="header">
+        <nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo.png" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#features">Features</a>
+                        </li>
+                        <li>
+                            <a href="#videos">Videos</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--header end-->
+
+    <!--hero section start-->
+    <div id="home">
+        <section class="video-banner full-height">
+            
+            <video id="my-video" class="video-wrap" muted loop>
+                <source src="assets/img/media/video.mp4" type="video/mp4">
+                <source src="assets/img/media/demo.ogv" type="video/ogg">
+                <source src="assets/img/media/demo.webm" type="video/webm">
+            </video>
+            <!-- <div class="video-overlay"></div> -->
+
+            <div class="content text-center light-txt">
+                <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
+                    <h1 class="text-uppercase">Leap Second</h1>
+                    <p class="hero-subtitle text-uppercase">
+                       Savor the moments of your life
+                    </p>
+                    <div class="group-button">
+                        <!-- <a class="btn line-btn-dark" href="#" title="" >View More</a> -->
+						<a href="https://itunes.apple.com/app/apple-store/id1021405859?pt=117894720&ct=leapsecond-web&mt=8" style="display:inline-block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!--hero section end-->
+
+    <!--about section start-->
+    <div class="section-wrapper pattern-bg" id="about">
+        <section class="section-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center wow fadeInUp">
+                            <h1 class="title separator ">Leap Second</h1>
+                            <div class="sub-title h3">Savor the moments of your life</div>
+                        </div>
+
+                        <div class="col-md-8 col-md-offset-2 text-center wow fadeInUp">
+                            <p> Leap Second is a one-second video app that helps you showcase the moments of your life. It is a flexible and easy way to trim your videos and stitch them into moments that feature your day, week, month, or all of the above. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--about section end-->
+
+    <!--parallax section start-->
+    <section class="section-space parallax parallax-quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="quote light-txt text-center wow fadeInUp">
+                        <h1>
+                            <span class="quote-img">
+                                <img src="assets/img/quote1.png" alt="">
+                            </span>
+							Do not take life too seriously. You will never get out of it alive.
+                            <span class="quote-img">
+                                <img src="assets/img/quote2.png" alt="">
+                            </span>
+                        </h1>
+
+                        <p> - Elbert Hubbard - </p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--parallax section end-->
+
+    <div class="section-wrapper" id="videos">
+        <section class="section-space">
+            <div class="container">
+			    <div class="row">
+			        <div class="col-md-6">
+			            <div class="m-bot-50">
+			                <h2 class="title">Days in 2015</h2>
+			            </div>
+			            <div class="embed-responsive embed-responsive-16by9">							
+			                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V9eWQ_EvEuw"></iframe>
+			            </div>
+			        </div>
+		        <div class="col-md-6">
+		            <div class="m-bot-50">
+			                <h2 class="title">Days in 2016</h2>
+		            </div>
+		            <div class="embed-responsive embed-responsive-16by9">
+			        	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CBstXlmy35k"></iframe>
+		            </div>
+		        </div>
+			    </div>
+		    </div>
+	    </div>
+    </div>
+	
+    <!--parallax section start-->
+    <section class="section-space parallax parallax-promo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 light-txt text-right wow fadeInLeft">
+                    <h2 class="m-top-0">Download Leap Second for free today!</h2>
+                </div>
+                <div class="col-md-4 col-sm-4 wow fadeInRight">
+					<a href="https://itunes.apple.com/app/apple-store/id1021405859?pt=117894720&ct=leapsecond-web&mt=8" style="display:inline-block;overflow:hidden;background:url(//linkmaker.itunes.apple.com/assets/shared/badges/en-us/appstore-lrg.svg) no-repeat;width:135px;height:40px;background-size:contain;"></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--parallax section end-->
+
+    <!--services section start-->
+    <div class="section-wrapper" id="features">
+        <section class="section-space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-list text-center wow fadeInUp">
+                            <div class="icon">
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4>Easy Organization</h4>
+                                <p>Videos are sorted by date and prepopulated in the calendar, making it easy to organize your videos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-list text-center wow fadeInUp">
+                            <div class="icon">
+								<i class="fa fa-cloud" aria-hidden="true"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4>Safe Backups</h4>
+                                <p>Full iCloud Photo support. If enabled, all your Seconds are backed up in the iCloud Photo Library. Never lose a Second! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="service-list text-center wow fadeInUp">
+                            <div class="icon">
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4>Social</h4>
+                                <p>Integrated with your favorite social media apps so you can share your amazing moments… or keep them private, your call!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--services section end-->
+	
+    <!--parallax section start-->
+    <section class="section-space parallax parallax-quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="quote light-txt text-center wow fadeInUp">
+                        <h1>
+                            <span class="quote-img">
+                                <img src="assets/img/quote1.png" alt="">
+                            </span>
+							Adventure is worthwhile.
+                            <span class="quote-img">
+                                <img src="assets/img/quote2.png" alt="">
+                            </span>
+                        </h1>
+
+                        <p> - Aesop - </p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--parallax section end-->
+
+    <!--contact section start-->
+    <div class="section-wrapper" id="contact">
+        <section class="section-space p-bot-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center wow fadeInUp">
+                            <h1 class="title separator"> Contact Us</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-with-location">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contact-wrap wow fadeInUp">
+                                <h3 class="text-left">Say Hi!</h3>
+								We always want your feedback! What do you want to see next? What do features can be improved? Or if you simply wanna say hi! Email us at <a href="mailto:leapsecondapp@gmail.com" target="_top">Hello</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-wrap wow fadeInUp">
+                                <h3 class="text-left">Support</h3>
+								Experincing any issues? Something not working? Send us an email <a href="mailto:leapsecondapp@gmail.com" target="_top">Support</a>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-wrap wow fadeInUp">
+                                <h3 class="text-left">Creator</h3>
+								Wanna get in touch with the creator of Leap Second? Send an email to <a href="mailto:leapsecondapp@gmail.com" target="_top">Jon Andersen</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--contact section end-->
+
+    <!-- footer start-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="f-logo wow fadeInUp">
+                        <img src="assets/img/logo-dark.png" alt=""/>
+                    </div>
+                    <span class="copyright wow fadeInUp">&copy; Copyright 2017 : Jon Andersen. All Rights Reserved.</span>
+                    <ul class="social-link wow fadeInUp">
+                        <li><a href="https://www.facebook.com/leapsecondapp/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/leapsecondapp" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/leapsecond/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="mobile-privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+						
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end-->
+
+    <!--scripts-->
+    <script src="assets/vendor/jquery-2.1.3.min.js"></script>
+    <script src="assets/vendor/bs/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/owl/owl.carousel.min.js"></script>
+    <script src="assets/vendor/jquery.nav.js"></script>
+    <script src="assets/vendor/jquery.animateNumber.min.js"></script>
+    <script src="assets/vendor/visible.js"></script>
+    <script src="assets/vendor/wow.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="assets/vendor/modernizr.js"></script>
+    <![endif]-->
+
+    <!--init scripts-->
+    <script src="assets/js/scripts.min.js"></script>
+
+    <script>
+        /* ---------------------------------------------
+         video banner
+         --------------------------------------------- */
+
+        var video = document.getElementById("my-video");
+
+        /**
+         * Check if video can play, and play it
+         */
+        video.addEventListener( "canplay", function() {
+            video.play();
+        });
+    </script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-97434855-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+</body>
+</html>
+
